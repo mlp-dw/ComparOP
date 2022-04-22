@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+English+SC");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "IM Fell English SC";
+}
+p,a{
+  font-family: "Indie Flower";
+}
+.main-background{
+  background-image: url("https://digitalpainting.school/media/cache/creation_full_uhd/uploads/creation/sp/16/sp166-5e0fa2e6.jpg");
+  background-size: cover;
+  background-attachment: center;
+  background-repeat: no-repeat;
+}
+.card {
+  width: 420px;
+  height: 340px;
+  margin: 1em;
+  perspective: 1500px;
+}
+.card .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+}
+.more {
+  display: none;
+}
+.more:checked ~ .content {
+  transform: rotateY(180deg);
+}
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 6px;
+}
+.front .inner,
+.back .inner {
+  height: 100%;
+  display: grid;
+  padding: 1em;
+  transform: translateZ(80px) scale(0.94);
+}
+.front {
+  background-color: #fff;
+  background-size: cover;
+  background-position: center center;
+}
+.front:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 6px;
+  backface-visibility: hidden;
+  background: linear-gradient(40deg, rgba(67, 138, 243, 0.4), rgba(255, 242, 166, 0.4));
+}
+.front .inner {
+  grid-template-rows: 5fr 1fr 1fr 2fr 1fr;
+  justify-items: center;
+}
+.front h2 {
+  grid-row: 2;
+  margin-bottom: 0.3em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.front .rating {
+  grid-row: 3;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.front .rating i {
+  margin: 0 1px;
+}
+.back {
+  transform: rotateY(180deg);
+  background-color: #ffffff;
+  border: 2px solid #f0f0f0;
+}
+.back .inner {
+  grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 0.8em;
+  justify-items: center;
+}
+.back .info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #355cc9;
+  grid-row: 3;
+}
+.back .info span {
+  font-size: 2em;
+  font-weight: 700;
+}
+.back .info i {
+  font-size: 1.2em;
+}
+.back .info .icon {
+  margin-left: 0.3em;
+}
+.back .info .icon span {
+  display: block;
+  margin-top: -0.25em;
+  font-size: 0.8em;
+  font-weight: 600;
+  white-space: nowrap; 
+}
+.back .description {
+  grid-row: 5;
+  grid-column: 1/-1;
+  font-size: 0.86em;
+  border-radius: 5px;
+  font-weight: 600;
+  line-height: 1.4em;
+  overflow: auto;
+  color: #355cc9;
+  border: 1px solid #355cc9;
+  background-color: #d8e3e8;
+  padding-right: 10px;
+}
+.back .location,
+.back .price {
+  font-weight: 600;
+  color: #355cc9;
+  grid-row: 1;
+  font-size: 0.86em;
+}
+.back .location {
+  grid-column: 1/4;
+  justify-self: left;
+}
+.back .price {
+  grid-column: 3/-1;
+  justify-self: right;
+}
+.back .button2 {
+  grid-column: 1/-1;
+  justify-self: center;
+}
+.button2 {
+  grid-row: -1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  padding: 0 1.5em;
+  height: 3em;
+  line-height: 2.9em;
+  min-width: 3em;
+  background-color: transparent;
+  border: solid 2px #fff;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  backface-visibility: hidden;
+  transition: 0.3s ease-in-out;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.button2:hover {
+  background-color: #fff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  text-shadow: none;
+  color: #355cc9;
+}
+.button2.return {
+  line-height: 3em;
+  color: #355cc9;
+  border-color: #355cc9;
+  text-shadow: none;
+}
+.button2.return:hover {
+  background-color: #355cc9;
+  color: #fff;
+  box-shadow: none;
+}
+
+/* -----------------------------------------------------------
+ADMIN------------------------------------------------------ */
+.content {
+	z-index: 1;
+	margin: 0 auto;
+  background-image: url("https://digitalpainting.school/media/cache/creation_full_uhd/uploads/creation/sp/16/sp166-5e0fa2e6.jpg");
+  background-size: cover;
+  background-attachment: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+.box {
+	padding: 5%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.bg-2 {
+	background: linear-gradient(40deg, rgba(67, 138, 243, 0.8), rgba(255, 242, 166, 0.8));
+  border: 2px solid rgb(33, 182, 100);
+  border-radius: 10%;
+  box-shadow: #859ddf;
+	color: #000000;
+}
+/* Common button styles */
+.button {
+  margin: 5%;
+  font-weight: bold;
+	float: left;
+	display: block;
+	border: none;
+	background: none;
+	color: inherit;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.button:focus {
+	outline: none;
+}
+.button > span {
+	vertical-align: middle;
+}
+.bg-2 .button {
+	color: #000000;
+	border-color: #4b4b4b;
+}
+.button--border-thin {
+	border: 1px solid;
+}
+/* Wayra */
+.button--wayra {
+	overflow: hidden;
+	width: 100%;
+	-webkit-transition: border-color 0.3s, color 0.3s;
+	transition: border-color 0.3s, color 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button--wayra::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150%;
+	height: 100%;
+	z-index: -1;
+	-webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+	transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+	-webkit-transform-origin: 0% 100%;
+	transform-origin: 0% 100%;
+	-webkit-transition: -webkit-transform 1s, opacity 1s, background-color 1s;
+	transition: transform 1s, opacity 1s, background-color 1s;
+}
+.button--wayra:hover {
+	border-color: rgb(33, 182, 100);
+  background-image: url("https://digitalpainting.school/media/cache/creation_full_uhd/uploads/creation/sp/16/sp166-5e0fa2e6.jpg");
+  background-size: cover;
+  background-attachment: center;
+  background-repeat: no-repeat;
+}
+.button--wayra:hover::before {
+	opacity: 1;
+  background: linear-gradient(40deg, rgba(67, 138, 243, 0.8), rgba(255, 242, 166, 0.8));
+	-webkit-transform: rotate3d(0, 0, 1, 0deg);
+	transform: rotate3d(0, 0, 1, 0deg);
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button--round-s {
+	border-radius: 5px;
+}
+
+#first {
+  border: 2px solid rgb(33, 182, 100);
+  border-radius: 10%;
+  box-shadow: #859ddf;
+  padding: 5%;
+  background: linear-gradient(40deg, rgba(67, 138, 243, 0.8), rgba(255, 242, 166, 0.8));
+}
+#admin-forms{
+  background-image: url("https://digitalpainting.school/media/cache/creation_full_uhd/uploads/creation/sp/16/sp166-5e0fa2e6.jpg");
+  background-size: cover;
+  background-attachment: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+#admin-forms1{
+  background-image: url("https://digitalpainting.school/media/cache/creation_full_uhd/uploads/creation/sp/16/sp166-5e0fa2e6.jpg");
+  background-size: cover;
+  background-attachment: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 5%;
+}
+#scroll_to_top {
+  position: fixed;
+  width: 2%;
+  height: 20%;
+  bottom: 2%;
+  right: 1%;
+}
+#return {
+  position: fixed;
+  width: 2%;
+  height: 50%;
+  top: 50%;
+  left: 5%;
+}
