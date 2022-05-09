@@ -19,6 +19,16 @@ p,a{
   margin: 1em;
   perspective: 93.75em;
 }
+
+@media screen and (max-width: 470px) {
+  .card {
+    width: 26.25em;
+    height: 21.25em;
+    /* haut | droit | bas | gauche */
+    margin: 1em, 0, 1em, 0;
+    perspective: 93.75em;
+  }
+}
 .card .content {
   position: relative;
   width: 100%;
