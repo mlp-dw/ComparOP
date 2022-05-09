@@ -22,7 +22,7 @@ p,a{
 
 @media screen and (max-width: 470px) {
   .card {
-    width: 26.25em;
+    width: 25em;
     height: 21.25em;
     /* haut | droit | bas | gauche */
     margin: 1em, 0, 1em, 0;
