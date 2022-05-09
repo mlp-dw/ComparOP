@@ -14,19 +14,19 @@ p,a{
   background-repeat: no-repeat;
 }
 .card {
-  width: 26.25em;
-  height: 21.25em;
+  width: 44vh;
+  height: 36vh;
   margin: 1em;
-  perspective: 93.75em;
+  perspective: 160vh;
 }
 
 @media screen and (max-width: 470px) {
   .card {
-    width: 25em;
-    height: 21.25em;
+    width: 44vh;
+    height: 36vh;
     /* haut | droit | bas | gauche */
     margin: 1em, 0, 1em, 0;
-    perspective: 93.75em;
+    perspective: 160vh;
   }
 }
 .card .content {
