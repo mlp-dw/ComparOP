@@ -57,7 +57,7 @@ function ispremiumTour($operator){
             <a href="#top"><i class="fas fa-arrow-alt-circle-up fa-inverse fa-2x"></i></a>
         </div>
         <div id="return">
-            <a href="/comparOP/index.php" class="d-flex flex-row justify-content-around">
+            <a href="/index.php" class="d-flex flex-row justify-content-around">
                 <i class="fas fa-arrow-left fa-inverse fa-2x"></i>
                 <i class="fas fa-solid fa-umbrella-beach fa-inverse fa-2x"></i>
             </a>
@@ -95,7 +95,7 @@ function ispremiumTour($operator){
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form action="/comparOP/process/add_review.php" method="post">
+                                <form action="/process/add_review.php" method="post">
                                     <div class="mb-3">
                                         <label for="author" class="col-form-label">Pseudo:</label>
                                         <input type="text" name="author" id="author" placeholder="Enter your pseudonym here" class="form-control">

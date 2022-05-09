@@ -7,7 +7,7 @@ include '../utils/alert.php';
             <a href="#top"><i class="fas fa-arrow-alt-circle-up fa-inverse fa-2x"></i></a>
         </div>
         <div id="return">
-            <a href="/comparOP/admin.php" class="d-flex flex-row justify-content-around">
+            <a href="/admin.php" class="d-flex flex-row justify-content-around">
                 <i class="fas fa-arrow-left fa-inverse fa-2x"></i>
             </a>
         </div>
@@ -21,7 +21,7 @@ include '../utils/alert.php';
                                     <h1>Add Tour Operator</h1>
                                 </div>
                             </div>
-                            <form action="/comparOP/process/add_to.php" method="POST" name="tour_operator">
+                            <form action="/process/add_to.php" method="POST" name="tour_operator">
                                 <div class="form-group d-flex flex-column">
                                     <label for="name">Name :</label>
                                     <input type="text" name="name" class="form-control m-2" id="name" placeholder="set name">

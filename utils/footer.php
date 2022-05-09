@@ -6,13 +6,13 @@
                 <li class="nav-item"><a href="" class="nav-link footer-link px-3 text-muted">About</a></li>
             </ul>
             <p class="text-center">
-                <a href="/comparOP/index.php" class="link-dark text-decoration-none">
-                    <img src="/comparOP/img/op-muted.png" class="img-fluid" alt="">
+                <a href="/index.php" class="link-dark text-decoration-none">
+                    <img src="/img/op-muted.png" class="img-fluid" alt="">
                 </a>
             </p>
         </footer>
 
-        <script src="/comparOP/assets/js/main.js"></script>
+        <script src="/assets/js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

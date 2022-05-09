@@ -11,7 +11,7 @@ $getAllTO = $manager->getAllOperator();
             <a href="#top"><i class="fas fa-arrow-alt-circle-up fa-inverse fa-2x"></i></a>
         </div>
         <div id="return">
-            <a href="/comparOP/admin.php" class="d-flex flex-row justify-content-around">
+            <a href="/admin.php" class="d-flex flex-row justify-content-around">
                 <i class="fas fa-arrow-left fa-inverse fa-2x"></i>
             </a>
         </div>
@@ -25,7 +25,7 @@ $getAllTO = $manager->getAllOperator();
                                     <h1>Go Premium</h1>
                                 </div>
                             </div>
-                            <form action="/comparOP/process/update_premium.php" method="POST" name="premium">
+                            <form action="/process/update_premium.php" method="POST" name="premium">
                                 <div class="form-group d-flex flex-column">
                                     <select class="my-5" name="tour_operator_id">
                                         <option value="">-- Choose the Tour Operator to Upgrade --</option>

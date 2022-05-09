@@ -63,7 +63,7 @@ $distinctLocation = $manager->getAllLocations();
                         <label for="card<?=$destination->getLocation();?>" class="button2 return" aria-hidden="true">
                             <i class="fas fa-arrow-left"></i>
                         </label>
-                        <a type="button" id="offer" href="/comparOP/destination.php?location=<?=$destination->getLocation()?>" class="btn btn-primary">See all offers</a>                        </div>
+                        <a type="button" id="offer" href="/destination.php?location=<?=$destination->getLocation()?>" class="btn btn-primary">See all offers</a>                        </div>
                     </div>
                 </div>
             </div>

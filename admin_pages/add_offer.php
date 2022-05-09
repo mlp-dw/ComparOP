@@ -12,7 +12,7 @@ $getAllDestinations = $manager->getAllLocations();
             <a href="#top"><i class="fas fa-arrow-alt-circle-up fa-inverse fa-2x"></i></a>
         </div>
         <div id="return">
-            <a href="/comparOP/admin.php" class="d-flex flex-row justify-content-around">
+            <a href="/admin.php" class="d-flex flex-row justify-content-around">
                 <i class="fas fa-arrow-left fa-inverse fa-2x"></i>
             </a>
         </div>
@@ -26,7 +26,7 @@ $getAllDestinations = $manager->getAllLocations();
                                     <h1>Add Offer</h1>
                                 </div>
                             </div>
-                            <form action="/comparOP/process/add_offer.php" method="POST" name="offer">
+                            <form action="/process/add_offer.php" method="POST" name="offer">
                                 <div class="form-group d-flex flex-column">
                                     <label for="destination">Destination :</label>
                                     <select id="destination" name="destination" class="m-2">

@@ -10,13 +10,13 @@ if(isset($_SESSION["pseudo"])){
             <h2 class="m-3"><?=$_SESSION["pseudo"];?></h2>
          </div>
          <div class="text-center text-dark d-flex flex-column">
-            <a class="d-flex justify-content-center" href="/comparOP/admin_pages/add_tourOperator.php">
+            <a class="d-flex justify-content-center" href="/admin_pages/add_tourOperator.php">
                <button class="button button2 button--wayra button--border-thin button--round-s">Add Tour Operator</button>
             </a>
-            <a class="d-flex justify-content-center" href="/comparOP/admin_pages/add_offer.php">
+            <a class="d-flex justify-content-center" href="/admin_pages/add_offer.php">
                <button class="button button2 button--wayra button--border-thin button--round-s">Add Offer</button>
             </a>
-            <a class="d-flex justify-content-center" href="/comparOP/admin_pages/pass_premium.php">
+            <a class="d-flex justify-content-center" href="/admin_pages/pass_premium.php">
                <button class="button button2 button--wayra button--border-thin button--round-s">Pass Premium</button>
             </a>
          </div>
@@ -36,7 +36,7 @@ if(isset($_SESSION["pseudo"])){
                                     <h1>Connection</h1>
                                 </div>
                             </div>
-                              <form action="/comparOP/process/login.php" method="POST">
+                              <form action="/process/login.php" method="POST">
                                  <div class="form-group d-flex flex-column">
                                     <label for="pseudo">Pseudo :</label>
                                     <input type="text" name="pseudo" class="form-control m-2" id="pseudo" placeholder="Your pseudo here">

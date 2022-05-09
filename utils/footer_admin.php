@@ -3,8 +3,8 @@
                 <p class="fs-5 text-muted">Contact Merry or Benji if you need help</p>
             </div>
             <p class="text-center">
-                <a href="/comparOP/index.php" class="link-dark text-decoration-none">
-                    <img src="/comparOP/img/op-muted.png" class="img-fluid" alt="">
+                <a href="/index.php" class="link-dark text-decoration-none">
+                    <img src="/img/op-muted.png" class="img-fluid" alt="">
                 </a>
             </p>
         </footer>
